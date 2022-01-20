@@ -21,22 +21,13 @@ monthly_challenges = {
 
 # View that displays the challenges landing page, listing each month as a link to it's challenge
 def index(request):
+
     months = list(monthly_challenges.keys())
 
     return render(request, "challenges/index.html", {
         "months": months,
     })
 
-    # for month in months:
-    #     capitalized_month = month.capitalize()
-    #     month_path = reverse("month-challenge", args=[month])
-    #     list_items += f"<li><a href='{month_path}'>{capitalized_month}</a></li>"
-
-    # response_data = f"<ul>{list_items}</ul>"
-    # try:
-    #     return HttpResponse(response_data)
-    # except:
-    #     return HttpResponseNotFound("That didn't seem to work...")
 #------------------------------------------------------------------
 
 # View that takes an int as a parameter and redirects to the appropriate month
