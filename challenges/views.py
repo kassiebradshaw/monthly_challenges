@@ -3,17 +3,17 @@ from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.urls import reverse
 
 monthly_challenges = {
-    "january" : "January - Eat no meat for the entire month",
-    "february": "February - Walk for at least 20 minutes every day",
-    "march": "March - Learn Django for at least 20 minutes every day",
-    "april": "April - Eat no meat for the entire month",
-    "may": "May - Walk for at least 20 minutes every day",
-    "june": "June - Learn Django for at least 20 minutes every day",
-    "july": "July - Eat no meat for the entire month",
-    "august": "August -  for at least 20 minutes every day",
-    "september": "September - Learn Django for at least 20 minutes every day",
-    "october": "October - Eat no meat for the entire month",
-    "november": "November - Walk for at least 20 minutes every day",
+    "january" : "Eat no meat for the entire month",
+    "february": "Walk for at least 20 minutes every day",
+    "march": "Learn Django for at least 20 minutes every day",
+    "april": "Eat no meat for the entire month",
+    "may": "Walk for at least 20 minutes every day",
+    "june": "Learn Django for at least 20 minutes every day",
+    "july": "Eat no meat for the entire month",
+    "august": "Walk for at least 20 minutes every day",
+    "september": "Learn Django for at least 20 minutes every day",
+    "october": "Eat no meat for the entire month",
+    "november": "Walk for at least 20 minutes every day",
     "december": None,
 }
 
