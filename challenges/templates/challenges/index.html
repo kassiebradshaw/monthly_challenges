@@ -6,10 +6,12 @@
 {% endblock %}
 
 {% block css_files %}
-    <link rel="stylesheet" href="{% static 'challenges/challenges.css'%}">
+    <link rel="stylesheet" href="{% static "challenges/challenges.css" %}">
+    <link rel="stylesheet" href="{% static "challenges/includes/header.css" %}">
 {% endblock %}
 
 {% block content %}
+{% include "./includes/header.html" %}
 <h1>All Monthly Challenges</h1>
     <ul>
         {% for month in months %}
